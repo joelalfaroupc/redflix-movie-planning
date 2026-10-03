@@ -1,0 +1,669 @@
+Output base_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_BASE' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_NAME' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    9 into depth [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: ASIG_CONT P10 D1 UNIVERSO4
+        1: ASIG_CONT P6 D1 UNIVERSO3
+        2: ASIG_CONT_PREDEC P7 D2 P6 D1 UNIVERSO3
+        3: ASIG_CONT P4 D1 UNIVERSO2
+        4: ASIG_CONT_PREDEC P5 D2 P4 D1 UNIVERSO2
+        5: ASIG_CONT P3 D1 UNIVERSO4
+        6: ASIG_CONT P1 D1 UNIVERSO1
+        7: ASIG_CONT_PREDEC P2 D2 P1 D1 UNIVERSO1
+        8: ASIG_CONT_PREDEC_PREV P9 D1 P8 UNIVERSO4
+     
+
+time spent:    0.00 seconds instantiating 21 easy, 12 hard action templates
+               0.00 seconds reachability analysis, yielding 51 facts and 21 actions
+               0.00 seconds creating final representation with 51 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 10 states, to a max depth of 1
+               0.00 seconds total time
+
+----------------------------------
+Output base.1_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_BASE' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_NAME' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    6 into depth [1]
+                                   5            [1][2][3][4][5]
+                                   4            [1][2][3]
+                                   3            [1]
+                                   2            [1][2][3]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: ASIG_CONT P3 D1 UNIVERSO4
+        1: ASIG_CONT P10 D1 UNIVERSO4
+        2: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+        3: INCLUIR_ENPLAN P4 P5 UNIVERSO2
+        4: ASIG_CONT P4 D1 UNIVERSO2
+        5: ASIG_CONT P1 D1 UNIVERSO1
+        6: ASIG_CONT_PREDEC P2 D2 P1 D1 UNIVERSO1
+        7: INCLUIR_ENPLAN P8 P9 UNIVERSO4
+        8: ASIG_CONT P8 D1 UNIVERSO4
+        9: ASIG_CONT_PREDEC P5 D2 P4 D1 UNIVERSO2
+       10: ASIG_CONT_PREDEC P9 D2 P8 D1 UNIVERSO4
+       11: INCLUIR_ENPLAN P6 P7 UNIVERSO3
+       12: ASIG_CONT P6 D1 UNIVERSO3
+       13: ASIG_CONT_PREDEC P7 D2 P6 D1 UNIVERSO3
+     
+
+time spent:    0.00 seconds instantiating 20 easy, 12 hard action templates
+               0.00 seconds reachability analysis, yielding 50 facts and 20 actions
+               0.00 seconds creating final representation with 50 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 57 states, to a max depth of 5
+               0.00 seconds total time
+
+----------------------------------
+Output 1_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_1' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_NAME' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    5 into depth [1]
+                                   3            [1]
+                                   2            [1][2][3][4][5][6][7]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+        1: ASIG_CONTENIDO P9 UNIVERSO3 D1
+        2: ASIG_CONT_PREDEC_ASIGNADO P10 D2 P9 D1 UNIVERSO3
+        3: INCLUIR_ENPLAN P2 P3 UNIVERSO1
+        4: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+        5: ASIG_CONTENIDO P1 UNIVERSO1 D1
+        6: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+        7: ASIG_CONT_PREDEC_ASIGNADO P2 D2 P1 D1 UNIVERSO1
+        8: ASIG_CONT_PRED_VISTO_CONPRED P4 D3 P3 P2 D2 UNIVERSO1
+        9: ASIG_CONT_PREDEC_ASIGNADO P5 D4 P4 D3 UNIVERSO1
+     
+
+time spent:    0.00 seconds instantiating 64 easy, 10 hard action templates
+               0.00 seconds reachability analysis, yielding 57 facts and 15 actions
+               0.00 seconds creating final representation with 45 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 13 states, to a max depth of 7
+               0.00 seconds total time
+
+----------------------------------
+Output 1.1_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_1' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_NAME' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    7 into depth [1][2]
+                                   6            [1][2]
+                                   5            [1][2]
+                                   4            [1]
+                                   3            [1][2][3][4][5][6][7]
+                                   2            [1][2][3][4][5][6][7][8][9]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+        1: ASIG_CONTENIDO P9 UNIVERSO3 D1
+        2: INCLUIR_ENPLAN P7 P8 UNIVERSO2
+        3: ASIG_CONT_PREDEC_ASIGNADO P10 D2 P9 D1 UNIVERSO3
+        4: INCLUIR_ENPLAN P6 P7 UNIVERSO2
+        5: ASIG_CONTENIDO P6 UNIVERSO2 D1
+        6: ASIG_CONT_PREDEC_ASIGNADO P7 D2 P6 D1 UNIVERSO2
+        7: ASIG_CONT_PREDEC_ASIGNADO P8 D3 P7 D2 UNIVERSO2
+        8: INCLUIR_ENPLAN CAP4 CAP5 BREAKING_BAD
+        9: INCLUIR_ENPLAN CAP3 CAP4 BREAKING_BAD
+       10: INCLUIR_ENPLAN CAP2 CAP3 BREAKING_BAD
+       11: ASIG_CONT_PRED_VISTO CAP2 D1 CAP1 BREAKING_BAD
+       12: ASIG_CONT_PREDEC_ASIGNADO CAP3 D2 CAP2 D1 BREAKING_BAD
+       13: ASIG_CONT_PREDEC_ASIGNADO CAP4 D3 CAP3 D2 BREAKING_BAD
+       14: ASIG_CONT_PREDEC_ASIGNADO CAP5 D4 CAP4 D3 BREAKING_BAD
+       15: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+       16: INCLUIR_ENPLAN P3 P4 UNIVERSO1
+       17: INCLUIR_ENPLAN P2 P3 UNIVERSO1
+       18: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+       19: ASIG_CONTENIDO P1 UNIVERSO1 D1
+       20: ASIG_CONT_PREDEC_ASIGNADO P2 D2 P1 D1 UNIVERSO1
+       21: ASIG_CONT_PREDEC_ASIGNADO P3 D3 P2 D2 UNIVERSO1
+       22: ASIG_CONT_PREDEC_ASIGNADO P4 D4 P3 D3 UNIVERSO1
+       23: ASIG_CONT_PREDEC_ASIGNADO P5 D5 P4 D4 UNIVERSO1
+     
+
+time spent:    0.00 seconds instantiating 60 easy, 10 hard action templates
+               0.00 seconds reachability analysis, yielding 72 facts and 24 actions
+               0.00 seconds creating final representation with 70 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 51 states, to a max depth of 9
+               0.00 seconds total time
+
+----------------------------------
+Output 2_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_2' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_NAME' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    5 into depth [1]
+                                   4            [1][2][3][4][5][6][7]
+                                   3            [1][2][3][4][5][6][7][8][9]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: ASIG_CONTENIDO P12 D1 UNIVERSO4
+        1: ASIG_CONTENIDO P11 D1 UNIVERSO4
+        2: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+        3: ASIG_CONTENIDO P9 D1 UNIVERSO4
+        4: INCLUIR_ENPLAN P7 P8 UNIVERSO2
+        5: INCLUIR_ENPLAN P6 P7 UNIVERSO2
+        6: ASIG_PRIMER_PARALELO_SINPREC P6 P1 D1 UNIVERSO4
+        7: ASIG_CONT_PREDEC_ASIGNADO P7 D2 P6 D1 UNIVERSO2
+        8: ASIG_CONT_PREDEC_ASIGNADO P8 D3 P7 D2 UNIVERSO2
+        9: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+       10: INCLUIR_ENPLAN P3 P4 UNIVERSO1
+       11: INCLUIR_ENPLAN P2 P3 UNIVERSO1
+       12: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+       13: ASIG_SEGUNDO_PARALELO_CONPREDEC_ASIG P1 D2 P6 D1
+       14: ASIG_CONT_PREDEC_ASIGNADO P2 D3 P1 D2 UNIVERSO1
+       15: ASIG_CONT_PREDEC_ASIGNADO P3 D4 P2 D3 UNIVERSO1
+       16: ASIG_CONT_PREDEC_ASIGNADO P4 D5 P3 D4 UNIVERSO1
+       17: ASIG_SEGUNDO_PARALELO_CONPREDEC_ASIG1 P10 P5 P9 D1 UNIVERSO3 P4 D5 UNIVERSO1
+       18: ASIG_SEGUNDO_PARALELO_CONPREDEC_ASIG P5 D6 P10 D5
+     
+
+time spent:   33.75 seconds instantiating 37 easy, 129 hard action templates
+               0.00 seconds reachability analysis, yielding 89 facts and 100 actions
+               0.00 seconds creating final representation with 89 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 25 states, to a max depth of 9
+              33.75 seconds total time
+
+----------------------------------
+Output 2.1_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_2' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEM_NAME' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    5 into depth [1][2]
+                                   4            [1][2][3][4][5]
+                                   3            [1][2][3][4][5][6][7][8]
+                                   2            [1][2]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: INCLUIR_ENPLAN P12 P11 UNIVERSO4
+        1: ASIG_PRIMER_PARALELO_SINPREC P12 P11 D1 UNIVERSO4
+        2: ASIG_SEGUNDO_PARALELO_CONPREDEC_ASIG P11 D2 P12 D1
+        3: INCLUIR_ENPLAN P7 P8 UNIVERSO2
+        4: INCLUIR_ENPLAN P6 P7 UNIVERSO2
+        5: ASIG_CONTENIDO P6 D1 UNIVERSO4
+        6: ASIG_CONT_PREDEC_ASIGNADO P7 D2 P6 D1 UNIVERSO2
+        7: ASIG_CONT_PREDEC_ASIGNADO P8 D3 P7 D2 UNIVERSO2
+        8: INCLUIR_ENPLAN P2 P3 UNIVERSO1
+        9: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+       10: ASIG_CONTENIDO P1 D1 UNIVERSO4
+       11: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+       12: ASIG_CONT_PREDEC_ASIGNADO P2 D2 P1 D1 UNIVERSO1
+       13: ASIG_CONT_PRED_VISTO_CONPRED P4 D3 P3 P2 D2 UNIVERSO1
+       14: ASIG_PRIMER_PARALELO_CONPREDEC_ASIG P5 D4 P9 P4 D3 UNIVERSO1
+       15: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+       16: ASIG_SEGUNDO_PARALELO_CONPREDEC_ASIG P9 D5 P5 D4
+       17: ASIG_CONT_PREDEC_ASIGNADO P10 D6 P9 D5 UNIVERSO3
+     
+
+time spent:   32.91 seconds instantiating 43 easy, 79 hard action templates
+               0.00 seconds reachability analysis, yielding 72 facts and 80 actions
+               0.00 seconds creating final representation with 70 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 26 states, to a max depth of 8
+              32.91 seconds total time
+
+----------------------------------
+Output 3_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_3' defined
+ ... done.
+ff: parsing problem file
+problem 'REDFLIX' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    7 into depth [1]
+                                   6            [1][2]
+                                   5            [1]
+                                   4            [1][2][3]
+                                   3            [1][2][3][4][5]
+                                   2            [1][2][3][4][5] --- pruning stopped --- [1][2][3][4][5]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+
+advancing to distance:    7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: ASIGNAR_CONTENIDO P11 D1
+        1: ASIGNAR_CONTENIDO P12 D2
+        2: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+        3: ASIGNAR_CONTENIDO P1 D1
+        4: ASIGNAR_CONTENIDO P2 D3
+        5: INCLUIR_ENPLAN P7 P8 UNIVERSO2
+        6: INCLUIR_ENPLAN P6 P7 UNIVERSO2
+        7: ASIGNAR_CONTENIDO P6 D1
+        8: ASIGNAR_CONTENIDO P7 D4
+        9: ASIGNAR_CONTENIDO P8 D5
+       10: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+       11: ASIGNAR_CONTENIDO P9 D6
+       12: ASIGNAR_CONTENIDO P10 D7
+       13: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+       14: INCLUIR_ENPLAN P3 P4 UNIVERSO1
+       15: ASIGNAR_CONTENIDO P3 D4
+       16: ASIGNAR_CONTENIDO P4 D5
+       17: ASIGNAR_CONTENIDO P5 D6
+     
+
+time spent:    0.01 seconds instantiating 0 easy, 821 hard action templates
+               0.00 seconds reachability analysis, yielding 285 facts and 531 actions
+               0.00 seconds creating final representation with 258 relevant facts, 24 relevant fluents
+               0.00 seconds computing LNF
+               0.01 seconds building connectivity graph
+               2.64 seconds searching, evaluating 33517 states, to a max depth of 5
+               2.66 seconds total time
+
+----------------------------------
+Output 3.1_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_3' defined
+ ... done.
+ff: parsing problem file
+problem 'REDFLIX' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   11 into depth [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1][2][3]
+                                   3            [1][2][3]
+                                   2            [1][2][3][4][5][6][7][8][9]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: INCLUIR_ENPLAN P12 P11 SERIE1
+        1: ASIGNAR_CONTENIDO P11 D1
+        2: ASIGNAR_CONTENIDO C1 D2
+        3: ASIGNAR_CONTENIDO C2 D3
+        4: ASIGNAR_CONTENIDO C3 D4
+        5: ASIGNAR_CONTENIDO C4 D5
+        6: ASIGNAR_CONTENIDO C5 D6
+        7: ASIGNAR_CONTENIDO P12 D2
+        8: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+        9: ASIGNAR_CONTENIDO P9 D5
+       10: ASIGNAR_CONTENIDO P10 D7
+       11: INCLUIR_ENPLAN P7 P8 UNIVERSO2
+       12: ASIGNAR_CONTENIDO P7 D8
+       13: ASIGNAR_CONTENIDO P8 D9
+       14: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+       15: INCLUIR_ENPLAN P3 P4 UNIVERSO1
+       16: INCLUIR_ENPLAN P2 P3 UNIVERSO1
+       17: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+       18: ASIGNAR_CONTENIDO P1 D7
+       19: ASIGNAR_CONTENIDO P2 D8
+       20: ASIGNAR_CONTENIDO P3 D9
+       21: ASIGNAR_CONTENIDO P4 D10
+       22: ASIGNAR_CONTENIDO P5 D11
+     
+
+time spent:    0.02 seconds instantiating 0 easy, 1231 hard action templates
+               0.00 seconds reachability analysis, yielding 391 facts and 809 actions
+               0.00 seconds creating final representation with 340 relevant facts, 24 relevant fluents
+               0.00 seconds computing LNF
+               0.01 seconds building connectivity graph
+               0.02 seconds searching, evaluating 214 states, to a max depth of 9
+               0.05 seconds total time
+
+----------------------------------
+Output 3.2_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_3' defined
+ ... done.
+ff: parsing problem file
+problem 'REDFLIX_EXTENDED' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   12 into depth [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1][2]
+                                   7            [1][2]
+                                   6            [1][2][3]
+                                   5            [1][2][3]
+                                   4            [1][2][3][4][5]
+                                   3            [1][2][3][4][5]
+                                   2            [1][2][3][4][5][6][7][8][9]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: INCLUIR_ENPLAN P29 P30 UNIVERSO6
+        1: ASIGNAR_CONTENIDO P18 D1
+        2: ASIGNAR_CONTENIDO P30 D2
+        3: ASIGNAR_CONTENIDO P11 D1
+        4: ASIGNAR_CONTENIDO P29 D3
+        5: ASIGNAR_CONTENIDO P12 D4
+        6: INCLUIR_ENPLAN P26 P25 UNIVERSO6
+        7: ASIGNAR_CONTENIDO P26 D5
+        8: ASIGNAR_CONTENIDO P25 D6
+        9: INCLUIR_ENPLAN P19 P20 UNIVERSO6
+       10: ASIGNAR_CONTENIDO P19 D5
+       11: ASIGNAR_CONTENIDO P20 D7
+       12: INCLUIR_ENPLAN P9 P10 UNIVERSO3
+       13: ASIGNAR_CONTENIDO P9 D6
+       14: ASIGNAR_CONTENIDO P10 D8
+       15: INCLUIR_ENPLAN P14 P15 UNIVERSO5
+       16: INCLUIR_ENPLAN P13 P14 UNIVERSO5
+       17: ASIGNAR_CONTENIDO P13 D9
+       18: ASIGNAR_CONTENIDO P14 D10
+       19: ASIGNAR_CONTENIDO P15 D11
+       20: INCLUIR_ENPLAN P7 P8 UNIVERSO2
+       21: INCLUIR_ENPLAN P6 P7 UNIVERSO2
+       22: ASIGNAR_CONTENIDO P6 D12
+       23: ASIGNAR_CONTENIDO P7 D13
+       24: ASIGNAR_CONTENIDO P8 D14
+       25: INCLUIR_ENPLAN P4 P5 UNIVERSO1
+       26: INCLUIR_ENPLAN P3 P4 UNIVERSO1
+       27: INCLUIR_ENPLAN P2 P3 UNIVERSO1
+       28: INCLUIR_ENPLAN P1 P2 UNIVERSO1
+       29: ASIGNAR_CONTENIDO P1 D3
+       30: ASIGNAR_CONTENIDO P2 D4
+       31: ASIGNAR_CONTENIDO P3 D5
+       32: ASIGNAR_CONTENIDO P4 D6
+       33: ASIGNAR_CONTENIDO P5 D7
+     
+
+time spent:    0.12 seconds instantiating 0 easy, 4341 hard action templates
+               0.01 seconds reachability analysis, yielding 1101 facts and 3032 actions
+               0.01 seconds creating final representation with 882 relevant facts, 42 relevant fluents
+               0.05 seconds computing LNF
+               0.01 seconds building connectivity graph
+               1.00 seconds searching, evaluating 1470 states, to a max depth of 9
+               1.20 seconds total time
+
+----------------------------------
+Output 4_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_4' defined
+ ... done.
+ff: parsing problem file
+problem 'REDFLIX' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    6 into depth [1]
+                                   5            [1]
+                                   4            [1][2]
+                                   3            [1][2][3][4][5]
+                                   2            [1][2][3][4][5][6][7] --- pruning stopped --- [1][2][3][4][5][6][7]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+
+advancing to distance:    6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: ASIGNAR_CONTENIDO P11 D1
+        1: INCLUIR_ENPLAN P7
+        2: INCLUIR_ENPLAN P6
+        3: ASIGNAR_CONTENIDO P6 D2
+        4: ASIGNAR_CONTENIDO P12 D3
+        5: ASIGNAR_CONTENIDO P7 D4
+        6: INCLUIR_ENPLAN P9
+        7: ASIGNAR_CONTENIDO P9 D5
+        8: ASIGNAR_CONTENIDO P10 D6
+        9: INCLUIR_ENPLAN P4
+       10: ASIGNAR_CONTENIDO P8 D7
+       11: INCLUIR_ENPLAN P3
+       12: INCLUIR_ENPLAN P2
+       13: ASIGNAR_CONTENIDO P2 D1
+       14: ASIGNAR_CONTENIDO P3 D2
+       15: ASIGNAR_CONTENIDO P4 D3
+       16: ASIGNAR_CONTENIDO P5 D5
+     
+
+time spent:    0.01 seconds instantiating 0 easy, 983 hard action templates
+               0.00 seconds reachability analysis, yielding 300 facts and 738 actions
+               0.00 seconds creating final representation with 264 relevant facts, 38 relevant fluents
+               0.01 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.46 seconds searching, evaluating 3430 states, to a max depth of 7
+               0.48 seconds total time
+
+----------------------------------
+Output 4.1_prob.pddl
+----------------------------------
+ff: parsing domain file
+domain 'PRACTICA_REDFLIX_4' defined
+ ... done.
+ff: parsing problem file
+problem 'REDFLIX' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:    7 into depth [1]
+                                   6            [1]
+                                   5            [1][2]
+                                   4            [1]
+                                   3            [1][2][3][4][5]
+                                   2            [1][2][3][4][5][6][7][8][9] --- pruning stopped --- [1][2][3][4][5][6][7][8][9]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+
+advancing to distance:    7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: ASIGNAR_CONTENIDO P11 D1
+        1: ASIGNAR_CONTENIDO P12 D2
+        2: INCLUIR_ENPLAN P7
+        3: INCLUIR_ENPLAN P6
+        4: ASIGNAR_CONTENIDO P6 D3
+        5: ASIGNAR_CONTENIDO P7 D4
+        6: ASIGNAR_CONTENIDO P8 D5
+        7: INCLUIR_ENPLAN P9
+        8: ASIGNAR_CONTENIDO P9 D6
+        9: ASIGNAR_CONTENIDO P10 D7
+       10: INCLUIR_ENPLAN P4
+       11: INCLUIR_ENPLAN P3
+       12: ASIGNAR_CONTENIDO P13 D6
+       13: INCLUIR_ENPLAN P2
+       14: INCLUIR_ENPLAN P1
+       15: ASIGNAR_CONTENIDO P1 D1
+       16: ASIGNAR_CONTENIDO P2 D2
+       17: ASIGNAR_CONTENIDO P3 D3
+       18: ASIGNAR_CONTENIDO P4 D4
+       19: ASIGNAR_CONTENIDO P5 D5
+     
+
+time spent:    0.02 seconds instantiating 0 easy, 1878 hard action templates
+               0.00 seconds reachability analysis, yielding 336 facts and 1272 actions
+               0.00 seconds creating final representation with 308 relevant facts, 38 relevant fluents
+               0.01 seconds computing LNF
+               0.01 seconds building connectivity graph
+               8.87 seconds searching, evaluating 50156 states, to a max depth of 9
+               8.91 seconds total time
+
+----------------------------------

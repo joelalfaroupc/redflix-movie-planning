@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "movies": 12,
+  "extensions": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "checks": [
+    "balanced parentheses in working domains and generated examples",
+    "generator unit tests"
+  ],
+  "planner_executed": false,
+  "required_problem_sections_verified": true
+}
